@@ -1,0 +1,50 @@
+.footer
+    padding-top: 30px
+    padding-bottom: 30px
+    &-wrap
+        display: flex
+        justify-content: space-around
+        align-items: center
+    &-copy
+        max-width: 649px
+        p
+            display: inline
+            color: #484848
+            font-family: "Open Sans"
+            font-size: 14px
+            font-weight: 300
+        a
+            font-weight: 600
+            color: #484848
+            font-family: "Open Sans"
+            font-size: 14px
+            text-decoration: none
+            border-right: 1px solid
+            border-color: #484848
+            padding-right: 5px
+            &:last-child
+                border-right: none
+                padding-right: 0px
+    &-author
+            text-align: right
+            &__text
+                color: #484848
+                font-family: "Open Sans"
+                font-size: 14px
+                font-weight: 300
+@media (max-width: 991px)
+    .footer
+        padding-top: 15px
+        padding-bottom: 15px
+@media (max-width: 768px)
+    .footer
+        text-align: center
+        &-wrap
+            display: block
+        &-copy
+            p
+                display: block
+        &-author
+            margin-top: 10px
+            text-align: center
+@media (max-width: 425px)
